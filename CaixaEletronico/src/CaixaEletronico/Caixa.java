@@ -24,7 +24,7 @@ public class Caixa {
         System.out.println("Seu nome por favor : ");
         caixa.titular = s.nextLine();
 
-        System.out.println("Por favor " + caixa.titular + "Digite o nome do seu Banco: " );
+        System.out.println("Por favor " + caixa.titular + " selecione o nome do seu Banco: " );
         System.out.println(" (1) - Itaú;");
         System.out.println(" (2) - Bradesco;");
         System.out.println(" (3) - Banco do Brasil;");
@@ -73,7 +73,7 @@ public class Caixa {
 
             case 2:
                 System.out.println("\n");
-                System.out.println("  --- Banco " + caixa.nomeBanco1);
+                System.out.println("  --- Banco " + caixa.nomeBanco2);
                 System.out.println("Muito bem " + caixa.titular);
                 caixa.numeroConta =  numero.nextInt(10000);
                 System.out.println("O numero da sua conta é: " + caixa.numeroConta + " agência: " + caixa.agencia);
@@ -112,7 +112,7 @@ public class Caixa {
 
             case 3:
                 System.out.println("\n");
-                System.out.println("  --- Banco " + caixa.nomeBanco1);
+                System.out.println("  --- Banco " + caixa.nomeBanco3);
                 System.out.println("Muito bem " + caixa.titular);
                 caixa.numeroConta =  numero.nextInt(10000);
                 System.out.println("O numero da sua conta é: " + caixa.numeroConta + " agência: " + caixa.agencia);
@@ -155,10 +155,10 @@ public class Caixa {
 
 
         public static void menu(){
-            System.out.println("\n- o que você gostaria de fazer: Sacar, Despositar ou ver o Rendimento? ");
+            System.out.println("\n- o que você gostaria de fazer: Sacar, Despositar ou Calcular Saldo? ");
             System.out.println(" (1) - Sacar;");
             System.out.println(" (2) - Depositar;");
-            System.out.println(" (3) - Calcular Rendimento;");
+            System.out.println(" (3) - Calcular Saldo;");
             System.out.println(" (4) - Sair;");
             System.out.println("\nDigite a Opção: ");
 
