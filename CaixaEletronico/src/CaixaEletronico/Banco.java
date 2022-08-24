@@ -18,21 +18,28 @@ public class Banco {
     double saldo = 1500, rendimento;
 
 
+    //Criando metodo Sacar
     public double Sacar(double valor){
+        //verificação (Estrutura condicional) para ver se o saque proposto é maior que o saldo disponivel
+        //se o saque for maior saldo
         if(valor > saldo){
             System.out.println("Não é possivel efetuar o Saque de " + valor);
             System.out.println("Pois utrapassa o seu saldo de " + saldo);
-        }else{
+        }
+        //Caso for menor
+        else{
             saldo = saldo - valor;
         }
         return saldo;
     }
 
+    //Criando metodo Depositar
     public double Despositar(double valor){
         saldo = saldo + valor;
         return saldo;
     }
 
+    //Criando metodo Calcular Saldo
     public double CalcularSaldo(double saldo){
         rendimento = (saldo*100) / saldo;
         return rendimento;
