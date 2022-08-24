@@ -5,21 +5,27 @@
  */
 package CaixaEletronico;
 
+//Importando calsses ramdom e o scanner
 import java.util.Random;
 import java.util.Scanner;
 
 public class Caixa {
+    //Criando classe main
     public static void main(String[] args) {
         
+        //Criando e inicializando objeto para a classe Banco
         Banco caixa = new Banco();
+        //Criando e inicializando objeto para a classe Random
         Random numero = new Random();
+        //Criando e inicializando objetos para a classe Scanner
         Scanner s = new Scanner(System.in);
         Scanner c = new Scanner(System.in);
+        //Criaando e inicializando variavies para entrada de dados para o switch case
         int acao,bancos;
          
 
+        //Entrada de Dados
         System.out.println(" --- Sistema Do Caixa Eletronico --- ");
-
         System.out.println("\n");
         System.out.println("Seu nome por favor : ");
         caixa.titular = s.nextLine();
