@@ -68,11 +68,35 @@ public class Banco {
         return saldo;
     }
 
-    //Criando metodo Calcular Saldo.
-    public double Poupanca(double valor){
+    //Criando metodo Depositar na poupanca.
+    public double RetirarPoupanca(double valor){
         
-        //verificação (Estrutura condicional) para ver se o valorproposto para transferir para 
-        // a poupança é maior que o saldo disponivel.
+        //verificação (Estrutura condicional) para ver se o valor proposto para retirar da
+        //poupança é maior que o saldo da poupanca disponivel.
+        
+        //se o saque for maior que o saldo da poupanca.
+        if(valor > poupanca){
+            System.out.println("Não é possivel transferir para a poupança");
+            System.out.println("Pois utrapassa o seu saldo na poupanca de " + poupanca);
+        }
+        //Caso for menor.
+        else{
+            //Efetura a transferencia com o valor proposto.
+            //O metodo poupança recebera um valor escolhido pelo usuario 
+            // e ira subtrair do saldo na poupanca disponivel para transferir o valor
+            // a variavel saldo
+            poupanca = poupanca - valor;
+            saldo = saldo + valor;
+        }
+        
+        return poupanca;
+    }
+
+    //Criando metodo Depositar na poupanca.
+    public double DepositarPoupanca(double valor){
+        
+        //verificação (Estrutura condicional) para ver se o valor proposto para transferir para 
+        //o saldo da poupança é maior que o saldo disponivel.
         
         //se o saque for maior saldo.
         if(valor > saldo){

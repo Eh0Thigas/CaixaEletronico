@@ -112,7 +112,7 @@ public class Caixa {
                                 //Chamada do metodo Sacar().
                                 caixa.Sacar(saque);
                                 //Imprimira o saldo restante.
-                                System.out.println("Saldo Disponível: "+caixa.saldo);
+                                System.out.println("Saldo Disponível: R$ "+caixa.saldo);
                                 break;
                             
                             // caso for 2 (Deposito). 
@@ -123,26 +123,40 @@ public class Caixa {
                                 //Chamada do metodo Deposito().
                                 caixa.Despositar(deposito);
                                 //Imprimira o saldo resultante.
-                                System.out.println("Saldo Disponível: "+caixa.saldo);
+                                System.out.println("Saldo Disponível: R$ "+caixa.saldo);
+                                break;
+
+                            case 3:
+                                System.out.println("Qual o valor a ser retirado da poupanca?");
+                                //Receberá o valor do saque proposto na conta poupanca.
+                                double valorPR = s.nextDouble();
+                                //Chamada do metodo RetirarPoupanca().
+                                caixa.RetirarPoupanca(valorPR);
+                                //Imprimira o valor da poupança.
+                                System.out.println("valor na poupanca: R$ " + caixa.poupanca);
+                                //Imprimira o saldo resultante.
+                                System.out.println("Saldo Disponível: R$ "+caixa.saldo);
                                 break;
                                 
-                            // caso for 3 (Calcular Saldo). 
-                            case 3:
-                                System.out.println("Qual o valor do saque?");
+                            // caso for 4 Deposita na poupanca (DepositarPoupanca). 
+                            case 4:
+                                System.out.println("Qual o valor a ser guardado na poupanca?");
                                 //Receberá o valor do saque proposto.
-                                double valorP = s.nextDouble();
+                                double valorPD = s.nextDouble();
                                 //Chamada do metodo CalcularSaldo().
-                                caixa.Poupanca(valorP);
+                                caixa.DepositarPoupanca(valorPD);
                                 System.out.println("Transferencia realizada com sucesso");
                                 //Imprimira o valor guardado na poupança.
-                                System.out.println("valor na poupanca: " + caixa.poupanca);
+                                System.out.println("valor na poupanca: R$ " + caixa.poupanca);
                                 //Imprimira o saldo resultante.
-                                System.out.println("Saldo Disponível: "+caixa.saldo);
+                                System.out.println("Saldo Disponível: R$ "+caixa.saldo);
                                 break;
+
+                            
                 
                         }
-                        //Caso a opção for 4 (Sair) encerrará a aplicação.
-                    }while(acao !=4);
+                        //Caso a opção for 5 (Sair) encerrará a aplicação.
+                    }while(acao !=5);
          
                 
     }
@@ -152,8 +166,9 @@ public class Caixa {
             System.out.println("\n- o que você gostaria de fazer: Sacar, Despositar ou Calcular Saldo? ");
             System.out.println(" (1) - Sacar;");
             System.out.println(" (2) - Depositar;");
-            System.out.println(" (3) - Calcular Saldo;");
-            System.out.println(" (4) - Sair;");
+            System.out.println(" (3) - Retirar da poupanca;");
+            System.out.println(" (4) - Depositar na poupanca;");
+            System.out.println(" (5) - Sair;");
             System.out.println("\nDigite a Opção: ");
 
     }
