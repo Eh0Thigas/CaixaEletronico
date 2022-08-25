@@ -78,6 +78,20 @@ public class Caixa {
         // Aqui imprimi o numero da conta e a agencia.                                               
         System.out.println("O numero da sua conta é: " + caixa.numeroConta + " agência: " + caixa.agencia);  
         
+        //Quando a conta do titular foi criada
+       
+        //criando numero do dia aleatório
+        caixa.dia = numero.nextInt(31);
+        
+        //cirando numero do mes aleatorio
+        caixa.mes = numero.nextInt(12);
+        
+        //Deixando a String dataAbertura com o dia mes e ano criados acima
+        caixa.dataAbertura = caixa.dia + "/" + caixa.mes + "/" + caixa.ano;
+
+        //Impressão da data de abertura 
+        System.out.println("Data de abertura da conta: "+caixa.dataAbertura);
+        
         //Saldo da pessoa.
         System.out.println("Saldo Disponivel: " + caixa.saldo); 
         //OBS: O saldo sempre irá vir com R$ 1500 (Pré definido na classe Caixa.java).
