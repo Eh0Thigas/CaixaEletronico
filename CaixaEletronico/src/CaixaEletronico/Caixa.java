@@ -15,11 +15,14 @@ public class Caixa {
         
         //Criando e inicializando objeto para a classe Banco.
         Banco caixa = new Banco();
+        
         //Criando e inicializando objeto para a classe Random.
         Random numero = new Random();
+        
         //Criando e inicializando objetos para a classe Scanner.
         Scanner s = new Scanner(System.in);
         Scanner c = new Scanner(System.in);
+        
         //Criaando e inicializando variavies para entrada de dados para o switch case.
         int acao,bancos;
          
@@ -27,9 +30,11 @@ public class Caixa {
         //Entrada de Dados.
         System.out.println(" --- Sistema Do Caixa Eletronico --- ");
         System.out.println("\n");
+        
         //Entrada de dados pro nome do titular da conta.
         System.out.println("Seu nome por favor : ");
-        caixa.titular = s.nextLine(); //Scanner do tipo String para receber o nome. 
+        //Scanner do tipo String para receber o nome. 
+        caixa.titular = s.nextLine(); 
 
         //Entrada de dados para saber o banco do usuario.
         System.out.println("Por favor " + caixa.titular + " selecione o nome do seu Banco: " );
@@ -37,7 +42,9 @@ public class Caixa {
         System.out.println(" (2) - Bradesco;");
         System.out.println(" (3) - Banco do Brasil;");
         System.out.println("\nDigite a Opção: ");
-        bancos = c.nextInt();  //Scanner do tipo Int para receber o banco.
+        
+        //Scanner do tipo Int para receber o banco.
+        bancos = c.nextInt();  
 
         //Estrutura condicional para saber qual o Banco o usuario escolher.
         
@@ -58,14 +65,19 @@ public class Caixa {
             
         //Saida de dados para as informações do titular/usuario. 
         System.out.println("\n");
+        
         //Nome do banco escolhido. 
         System.out.println("  --- Banco " + caixa.nomeBanco);  
+        
         //Nome do titular.                                               
         System.out.println("Muito bem " + caixa.titular);   
+        
         // criando numero aleatorio para o numero da conta ficticia.                                                   
         caixa.numeroConta =  numero.nextInt(10000);     
-         // Aqui imprimi o numero da conta e a agencia.                                               
+        
+        // Aqui imprimi o numero da conta e a agencia.                                               
         System.out.println("O numero da sua conta é: " + caixa.numeroConta + " agência: " + caixa.agencia);  
+        
         //Saldo da pessoa.
         System.out.println("Saldo Disponivel: " + caixa.saldo); 
         //OBS: O saldo sempre irá vir com R$ 1500 (Pré definido na classe Caixa.java).
