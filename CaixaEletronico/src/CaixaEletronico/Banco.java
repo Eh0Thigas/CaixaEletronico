@@ -85,6 +85,7 @@ public class Banco {
             //O metodo poupança recebera um valor escolhido pelo usuario 
             // e ira subtrair do saldo na poupanca disponivel para transferir o valor
             // a variavel saldo
+            System.out.println("Transferencia realizada com sucesso");
             poupanca = poupanca - valor;
             saldo = saldo + valor;
         }
@@ -109,6 +110,7 @@ public class Banco {
             //O metodo poupança recebera um valor escolhido pelo usuario 
             // e ira subtrair do saldo disponivel para transferir o valor
             // a variavel poupança
+            System.out.println("Transferencia realizada com sucesso");
             saldo = saldo - valor;
             poupanca = valor;
         }

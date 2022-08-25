@@ -145,7 +145,6 @@ public class Caixa {
                                 double valorPD = s.nextDouble();
                                 //Chamada do metodo CalcularSaldo().
                                 caixa.DepositarPoupanca(valorPD);
-                                System.out.println("Transferencia realizada com sucesso");
                                 //Imprimira o valor guardado na poupança.
                                 System.out.println("valor na poupanca: R$ " + caixa.poupanca);
                                 //Imprimira o saldo resultante.
