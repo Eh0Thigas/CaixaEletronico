@@ -18,7 +18,7 @@ public class Banco {
     //Agência do titular. 
     String agencia = "0049";
     
-    //Data de abertura da conta, com o dia e o mes aleatorio e o ano ja vai ser pré cadastrado
+    //Data de abertura da conta, com o dia e o mes aleatorio e o ano (que ja vai ser pré cadastrado).
     int dia;
     int mes;
     int ano = 2020;
@@ -33,7 +33,7 @@ public class Banco {
     //Saldo na conta do titular.
     double saldo = 1500;
 
-    //Criando variavel poupança do tipo double
+    //Criando variavel poupança do tipo double.
     double poupanca;
 
 
