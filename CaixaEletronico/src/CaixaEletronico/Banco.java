@@ -16,7 +16,10 @@ public class Banco {
     String titular ;
     //Agência do titular. 
     String agencia = "0049";
-    //Data de abertura da conta.
+    //Data de abertura da conta, com o dia e o mes aleatorio e o ano ja vai ser pré cadastrado
+    int dia;
+    int mes;
+    int ano = 2020;
     String dataAbertura;
     //Nome do banco.
     String nomeBanco;
