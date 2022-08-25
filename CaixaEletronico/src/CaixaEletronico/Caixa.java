@@ -116,7 +116,7 @@ public class Caixa {
                             case 3:
                                 //Chamada do metodo CalcularSaldo().
                                 caixa.CalcularSaldo();
-                                System.out.println("Seu rendimento é de: "+caixa.rendimento);
+                                System.out.println("Seu rendimento é de: ");
                                 break;
                 
                         }
