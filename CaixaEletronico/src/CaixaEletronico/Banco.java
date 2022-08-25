@@ -33,10 +33,15 @@ public class Banco {
     //Saldo na conta do titular.
     double saldo = 1500;
 
+    //Criando variavel poupança do tipo double
+    double poupanca;
+
 
     //Criando metodo Sacar.
     public double Sacar(double valor){
+        
         //verificação (Estrutura condicional) para ver se o saque proposto é maior que o saldo disponivel.
+        
         //se o saque for maior saldo.
         if(valor > saldo){
             System.out.println("Não é possivel efetuar o Saque de " + valor);
@@ -44,7 +49,7 @@ public class Banco {
         }
         //Caso for menor.
         else{
-            //Efetura o saldo proposto.
+            //Efetura o saque proposto.
             //O metodo sacar recebera um valor escolhido pelo usuario 
             // e ira subtrair do saldo disponivel.
             saldo = saldo - valor;
@@ -64,8 +69,27 @@ public class Banco {
     }
 
     //Criando metodo Calcular Saldo.
-    public void CalcularSaldo(){
-
+    public double Poupanca(double valor){
+        
+        //verificação (Estrutura condicional) para ver se o valorproposto para transferir para 
+        // a poupança é maior que o saldo disponivel.
+        
+        //se o saque for maior saldo.
+        if(valor > saldo){
+            System.out.println("Não é possivel transferir para a poupança");
+            System.out.println("Pois utrapassa o seu saldo de " + saldo);
+        }
+        //Caso for menor.
+        else{
+            //Efetura a transferencia com o valor proposto.
+            //O metodo poupança recebera um valor escolhido pelo usuario 
+            // e ira subtrair do saldo disponivel para transferir o valor
+            // a variavel poupança
+            saldo = saldo - valor;
+            poupanca = valor;
+        }
+        
+        return poupanca;
     }
 
 }
