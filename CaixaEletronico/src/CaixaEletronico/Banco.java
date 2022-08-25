@@ -2,7 +2,7 @@
 /*
  * @autor Thiago Laurenti Coelho 
  *  @version Java 11
- *  @since 22/08/2022
+ *  @since 24/08/2022
  */
 
  //PACKAGE  que o caixa eletronico esta.
@@ -14,17 +14,22 @@ public class Banco {
     //Inicializando as variavies necessarias para a classe.
     //Nome do Titular.
     String titular ;
+    
     //Agência do titular. 
     String agencia = "0049";
+    
     //Data de abertura da conta, com o dia e o mes aleatorio e o ano ja vai ser pré cadastrado
     int dia;
     int mes;
     int ano = 2020;
     String dataAbertura;
+    
     //Nome do banco.
     String nomeBanco;
+    
     //Numero da conta. 
     int numeroConta;
+    
     //Saldo na conta do titular.
     double saldo = 1500;
 

@@ -1,7 +1,7 @@
       /*
  * @autor Thiago Laurenti Coelho 
  *  @version Java 11
- *  @since 22/08/2022
+ *  @since 24/08/2022
  */
 package CaixaEletronico;
 
