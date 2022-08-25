@@ -13,7 +13,7 @@ public class Banco {
     
     //Inicializando as variavies necessarias para a classe
     String titular , agencia = "0049", dataAbertura;
-    String nomeBanco1 = "Itaú" , nomeBanco2 = "Bradesco", nomeBanco3 = "Banco do Brasil";
+    String nomeBanco;
     int numeroConta;
     double saldo = 1500, rendimento;
 
