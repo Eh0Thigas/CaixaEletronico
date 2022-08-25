@@ -128,9 +128,16 @@ public class Caixa {
                                 
                             // caso for 3 (Calcular Saldo). 
                             case 3:
+                                System.out.println("Qual o valor do saque?");
+                                //Receberá o valor do saque proposto.
+                                double valorP = s.nextDouble();
                                 //Chamada do metodo CalcularSaldo().
-                                caixa.CalcularSaldo();
-                                System.out.println("Seu rendimento é de: ");
+                                caixa.Poupanca(valorP);
+                                System.out.println("Transferencia realizada com sucesso");
+                                //Imprimira o valor guardado na poupança.
+                                System.out.println("valor na poupanca: " + caixa.poupanca);
+                                //Imprimira o saldo resultante.
+                                System.out.println("Saldo Disponível: "+caixa.saldo);
                                 break;
                 
                         }
