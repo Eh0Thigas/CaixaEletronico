@@ -28,6 +28,7 @@ public class Banco {
         }
         //Caso for menor
         else{
+            //Efetura o saldo proposto
             saldo = saldo - valor;
         }
         return saldo;
@@ -40,9 +41,8 @@ public class Banco {
     }
 
     //Criando metodo Calcular Saldo
-    public double CalcularSaldo(double saldo){
-        rendimento = (saldo*100) / saldo;
-        return rendimento;
+    public void CalcularSaldo(){
+        
     }
 
 }
